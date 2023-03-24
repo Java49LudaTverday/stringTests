@@ -32,6 +32,7 @@ class StringTests {
 		assertEquals(-2, "look".compareTo("lookss"));
 		assertEquals(-5, "3".compareTo("8"));
 		assertTrue("Compare".compareTo("Compare") == 0);
+		assertFalse("123".compareTo("321")==0);
 	}
 
 	@Test
@@ -84,6 +85,7 @@ class StringTests {
 		assertFalse("It`s time to wake up.".contains("  "));
 		assertTrue("It`s time to wake up.".contains("s"));
 		assertTrue("".contains(""));
+		
 
 	}
 
